@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Construction</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-logo" viewBox="0 0 96 64" role="img" focusable="false">
+            <path class="logo-badge" d="M48 4 84 18v28L48 60 12 46V18L48 4Z" />
+            <path class="logo-badge-inner" d="M48 12 74 22v20L48 52 22 42V22L48 12Z" />
+            <path class="logo-road-sweep" d="M25 45c12-9 26-13 46-14" />
+            <path class="logo-road-mark" d="M47 42c4-2 8-3 13-4" />
+            <text class="logo-sk" x="48" y="38" text-anchor="middle">SK</text>
+          </svg>
+        </span>
+        <span class="brand-name">
+          <span class="brand-title">SK</span>
+          <span class="brand-subtitle">Construction</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section home-section">
+      <div class="container home-grid">
+        <div class="home-copy">
+          <p class="section-label">Welcome to SK Construction</p>
+          <h1>Reliable Road, Bridge, and Civil Construction Services.</h1>
+          <p>We help clients complete construction projects with careful planning, trained workers, quality materials, and dependable site execution.</p>
+          <div class="home-actions">
+            <a href="#contact" class="btn btn-primary">Get Consultation</a>
+            <a href="#projects" class="btn btn-secondary">See Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container section-header">
+        <p class="section-label">About SK Construction</p>
+        <h2>Built for durable roads, strong bridges, and reliable civil work.</h2>
+      </div>
+      <div class="container about-grid">
+        <div class="about-card">
+          <img src="img/about/about.png" alt="Construction site with crane and excavator" />
+        </div>
+        <div class="about-copy">
+          <span class="about-kicker">Roads / Bridges / Buildings</span>
+          <h3>We deliver reliable construction solutions for every project.</h3>
+          <p>Led by Sanjay Kumar, SK Construction handles hospital buildings, homes, roads, bridges, earthmoving, and civil infrastructure with careful planning, skilled workers, and dependable site execution.</p>
+          <button class="btn btn-primary about-toggle" type="button" aria-expanded="false" aria-controls="about-more">Read More</button>
+          <div id="about-more" class="about-more" hidden>
+            <p>Our team studies every site before work begins, arranges the right equipment and materials, and completes each stage with proper quality checks. From local development work to larger civil projects, we keep communication clear and execution practical.</p>
+            <div class="about-features">
+              <div>
+                <strong>Site Planning</strong>
+                <span>Inspection, measurement, material planning, and work scheduling.</span>
+              </div>
+              <div>
+                <strong>Field Execution</strong>
+                <span>Skilled labor, JCB support, road work, bridge support, and building work.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container about-stats">
+        <div>
+          <strong>10+</strong>
+          <span>Years of Experience</span>
+        </div>
+        <div>
+          <strong>120+</strong>
+          <span>Projects Completed</span>
+        </div>
+        <div>
+          <strong>95%</strong>
+          <span>On Schedule Work</span>
+        </div>
+        <div>
+          <strong>30+</strong>
+          <span>Active Workers</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container section-header">
+        <p class="section-label">Our Services</p>
+        <h2>Complete construction services for homes, buildings, and civil projects.</h2>
+      </div>
+      <div class="container service-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M12 22h34l6 8H18l-6-8Z" /><path d="M20 30v24M44 30v24M16 54h32M24 30l20 24M44 30 24 54" /><path class="icon-accent" d="M48 18h8v12h-8zM50 14h4v4h-4z" /></svg>
+          </div>
+          <h3>Building Construction</h3>
+          <p>Strong building work with proper planning, quality materials, and skilled execution.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M10 32 32 14l22 18" /><path d="M16 30v24h32V30" /><path d="M26 54V40h12v14M22 34h8M36 34h8" /><path class="icon-accent" d="M26 22h12l8 7v5H18v-5l8-7Z" /></svg>
+          </div>
+          <h3>House Renovation</h3>
+          <p>Practical renovation work to improve homes with clean finishing and durable results.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M32 12v8M32 44v8M12 32h8M44 32h8" /><path d="M24 42 32 18l8 24M27 34h10" /><path d="M18 48c8 5 20 5 28 0" /><path class="icon-accent" d="M28 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z" /></svg>
+          </div>
+          <h3>Architecture Design</h3>
+          <p>Thoughtful design support for safe, functional, and well-planned construction.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M10 28h28v18H10zM38 34h9l7 7v5H38z" /><path d="M18 50a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM46 50a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" /><path class="icon-accent" d="M18 22h18l6 6H12l6-6Z" /></svg>
+          </div>
+          <h3>Material Supply</h3>
+          <p>Reliable supply of construction materials to keep site work moving on schedule.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M20 26a12 12 0 0 1 24 0M18 26h28" /><path d="M22 30a10 10 0 0 0 20 0M32 40v10M22 54h20" /><path d="M46 18h8v16h-8zM50 22v8" /><path class="icon-accent" d="M42 38h10l4 8H46l-4-8Z" /></svg>
+          </div>
+          <h3>Construction Consultant</h3>
+          <p>Clear guidance for planning, site decisions, cost control, and project execution.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M14 16h36v26H14zM20 54l8-12M44 54l-8-12" /><path d="M22 26h14M22 34h8" /><path class="icon-accent" d="M38 24h8v14h-8z" /></svg>
+          </div>
+          <h3>Interior Design</h3>
+          <p>Interior planning and finishing support for useful, comfortable, and clean spaces.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M18 24h28a6 6 0 0 1 6 6v18H12V30a6 6 0 0 1 6-6Z" /><path d="M24 24v-5h16v5M12 36h40M28 36v6h8v-6" /><path class="icon-accent" d="M18 44h8v4h-8zM38 44h8v4h-8z" /></svg>
+          </div>
+          <h3>Building Maintenance</h3>
+          <p>Regular repair and maintenance services to keep buildings safe and functional.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false"><path d="M14 18h18v18H14zM36 26h14v22H14V36" /><path d="M20 24h6M20 30h6M40 34h6M40 40h6" /><path class="icon-accent" d="M30 42h10v6H30zM34 18h10v6H34z" /></svg>
+          </div>
+          <h3>Building Renovation</h3>
+          <p>Complete renovation work for older buildings, repairs, upgrades, and improvements.</p>
+        </article>
+      </div>
+    </section>
+    
+
+    <section id="projects" class="section section-secondary projects-section">
+      <div class="container section-header">
+        <p class="section-label">Our Projects</p>
+      </div>
+      <div class="container project-grid">
+        <article class="project-card">
+          <img src="img/work/1.png" alt="Construction project 1" />
+          <div class="project-info"><div><h3>Dream Home</h3><p>design, construction</p></div><span aria-hidden="true">+</span></div>
+        </article>
+        <article class="project-card">
+          <img src="img/work/2.png" alt="Construction project 2" />
+          <div class="project-info"><div><h3>Commercial Site</h3><p>earthwork, construction</p></div><span aria-hidden="true">+</span></div>
+        </article>
+        <article class="project-card">
+          <img src="img/work/3.png" alt="Construction project 3" />
+          <div class="project-info"><div><h3>Building Project</h3><p>design, construction</p></div><span aria-hidden="true">+</span></div>
+        </article>
+        <article class="project-card">
+          <img src="img/work/4.png" alt="Construction project 4" />
+          <div class="project-info"><div><h3>Site Development</h3><p>planning, execution</p></div><span aria-hidden="true">+</span></div>
+        </article>
+        <article class="project-card">
+          <img src="img/work/5.png" alt="Construction project 5" />
+          <div class="project-info"><div><h3>Civil Work</h3><p>roads, infrastructure</p></div><span aria-hidden="true">+</span></div>
+        </article>
+        <article class="project-card">
+          <img src="img/work/6.png" alt="Construction project 6" />
+          <div class="project-info"><div><h3>Renovation Work</h3><p>repair, construction</p></div><span aria-hidden="true">+</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container section-header">
+        <p class="section-label">Contact</p>
+        <h2>Ready to start your construction project?</h2>
+      </div>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h3>Let’s build something great together.</h3>
+          <p>SK Construction is here for planning, estimating, and project execution. Reach out for a free consultation.</p>
+          <ul>
+            <li><strong>Phone:</strong> +91 98765 43210</li>
+            <li><strong>Email:</strong> info@skconstruction.com</li>
+            <li><strong>Location:</strong> Delhi, India</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="Your email" required />
+          </label>
+          <label>
+            Message
+            <textarea rows="5" placeholder="Tell us about your project" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>SK Construction</strong>
+        <p>Road, bridge, and civil infrastructure work delivered with reliable planning and execution.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> SK Construction. All Rights Reserved.</p>
+      <span>Delhi, India</span>
+    </div>
+  </footer>
+</body>
+</html>
