@@ -104,14 +104,14 @@ button {
   position: relative;
   display: grid;
   place-items: center;
-  width: 6.9rem;
-  height: 4rem;
+  width: 11rem;
+  height: 3rem;
   flex: 0 0 auto;
   padding: 0;
-  border: 1px solid rgba(7, 95, 186, 0.08);
-  border-radius: 0.75rem;
-  background: #ffffff;
-  box-shadow: 0 10px 28px rgba(7, 54, 99, 0.1);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   overflow: hidden;
 }
 
@@ -338,6 +338,18 @@ button {
   white-space: nowrap;
   text-align: center;
   text-shadow: 0 14px 32px rgba(255, 255, 255, 0.76);
+}
+
+.home-copy h1 span {
+  display: inline;
+}
+
+.home-copy h1 span:nth-child(2)::before {
+  content: ", ";
+}
+
+.home-copy h1 span:nth-child(3)::before {
+  content: " ";
 }
 
 .home-copy p {
@@ -1234,8 +1246,8 @@ button {
   }
 
   .brand-mark {
-    width: 5.9rem;
-    height: 3.45rem;
+    width: 10.2rem;
+    height: 2.8rem;
   }
 
   .brand-title {
@@ -1496,11 +1508,30 @@ button {
   }
 
   .home-copy h1 {
-    max-width: 11.4em;
-    font-size: clamp(2rem, 9.4vw, 2.75rem);
-    line-height: 0.98;
+    max-width: 100%;
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
+    line-height: 1.14;
     margin-top: 0.85rem;
     white-space: normal;
+  }
+
+  .home-copy h1 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .home-copy h1 span:nth-child(2)::before,
+  .home-copy h1 span:nth-child(3)::before {
+    content: "";
+  }
+
+  .home-copy h1 span + span {
+    margin-top: 0.14em;
+  }
+
+  .home-copy h1 span:last-child {
+    font-size: 0.82em;
+    letter-spacing: 0;
   }
 
   .home-copy p {
@@ -1671,8 +1702,8 @@ button {
 
 @media (max-width: 380px) {
   .brand-mark {
-    width: 5.35rem;
-    height: 3.12rem;
+    width: 9.4rem;
+    height: 2.65rem;
   }
 
   .brand-title {
@@ -1702,8 +1733,13 @@ button {
   }
 
   .home-copy h1 {
-    max-width: 11.2em;
-    font-size: clamp(1.85rem, 9vw, 2.35rem);
+    max-width: 100%;
+    font-size: clamp(1.48rem, 7.8vw, 1.86rem);
+    line-height: 1.16;
+  }
+
+  .home-copy h1 span:last-child {
+    font-size: 0.8em;
   }
 
   .home-copy p {
