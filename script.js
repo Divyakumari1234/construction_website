@@ -4,12 +4,16 @@ const yearEl = document.getElementById('year');
 
 if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {
-    siteNav.classList.toggle('open');
+    const isOpen = siteNav.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
   document.querySelectorAll('.site-nav a').forEach((link) => {
     link.addEventListener('click', () => {
       siteNav.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
@@ -38,4 +42,5 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
 
