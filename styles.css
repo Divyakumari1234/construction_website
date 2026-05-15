@@ -1020,9 +1020,16 @@ button {
   color: var(--muted);
 }
 
+.contact-section {
+  background:
+    linear-gradient(135deg, rgba(7, 95, 186, 0.08), rgba(255, 255, 255, 0.92) 48%, rgba(231, 242, 255, 0.78)),
+    #ffffff;
+}
+
 .contact-grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   align-items: stretch;
+  gap: clamp(1.2rem, 3vw, 2.2rem);
 }
 
 .contact-section .section-label {
@@ -1040,21 +1047,44 @@ button {
 }
 
 .contact-info {
-  background: linear-gradient(180deg, rgba(11, 102, 195, 0.1), rgba(11, 102, 195, 0.04));
-  border: 1px solid rgba(11, 102, 195, 0.16);
-  padding: 2.5rem;
-  border-radius: 0.95rem;
-  box-shadow: 0 16px 40px rgba(7, 54, 99, 0.08);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-content: start;
+  background: linear-gradient(145deg, var(--brand-blue-dark), var(--brand-blue));
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: clamp(1.6rem, 3vw, 2.6rem);
+  border-radius: 1rem;
+  box-shadow: 0 22px 58px rgba(7, 54, 99, 0.18);
+}
+
+.contact-info::after {
+  content: "";
+  position: absolute;
+  right: -4rem;
+  bottom: -4rem;
+  width: 13rem;
+  height: 13rem;
+  border: 2rem solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  pointer-events: none;
 }
 
 .contact-info h3 {
-  margin-top: 0;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.2;
 }
 
 .contact-info p {
-  color: var(--muted);
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.84);
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.6rem;
 }
 
 .contact-info ul {
@@ -1064,34 +1094,60 @@ button {
 }
 
 .contact-info li {
+  position: relative;
+  z-index: 1;
   margin-bottom: 0.85rem;
+  padding: 0.85rem 1rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.7rem;
   overflow-wrap: anywhere;
+}
+
+.contact-info li:last-child {
+  margin-bottom: 0;
 }
 
 .contact-form {
   display: grid;
-  gap: 1rem;
+  gap: 1.05rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  padding: 2rem;
-  border-radius: 0.95rem;
-  box-shadow: 0 16px 40px rgba(7, 54, 99, 0.08);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border-radius: 1rem;
+  box-shadow: 0 22px 58px rgba(7, 54, 99, 0.12);
 }
 
 .contact-form label {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.55rem;
   color: var(--text);
+  font-weight: 750;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid rgba(11, 102, 195, 0.12);
-  background: #ffffff;
+  border: 1px solid rgba(11, 102, 195, 0.16);
+  background: #f8fbff;
   color: var(--text);
-  border-radius: 0.9rem;
+  border-radius: 0.75rem;
   padding: 1rem 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #ffffff;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 4px rgba(7, 95, 186, 0.1);
+}
+
+.contact-form .btn {
+  width: 100%;
+  margin-top: 0.2rem;
 }
 
 .contact-form textarea {
@@ -1400,7 +1456,7 @@ button {
 
   .contact-info ul {
     display: grid;
-    justify-items: center;
+    justify-items: stretch;
   }
 
   .footer-links {
@@ -1651,7 +1707,7 @@ button {
   .contact-form {
     width: min(100%, 22rem);
     justify-self: center;
-    border-radius: 0.55rem;
+    border-radius: 0.8rem;
     border-color: rgba(11, 102, 195, 0.12);
   }
 
@@ -1683,20 +1739,20 @@ button {
   }
 
   .contact-form {
-    padding: 1.5rem;
+    padding: 1.35rem;
   }
 
   .contact-info {
-    padding: 1.5rem;
+    padding: 1.35rem;
   }
 
   .contact-form label {
-    text-align: center;
+    text-align: left;
   }
 
   .contact-form input,
   .contact-form textarea {
-    text-align: center;
+    text-align: left;
   }
 }
 
